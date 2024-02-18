@@ -1,0 +1,103 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+#header,
+#footer,
+#content,
+#waldo-img {
+    margin: 0;
+    padding: 0;
+}
+
+#header,
+#footer {
+    background-color: #fff;
+    flex-grow: 0;
+}
+
+#header {
+    height: 100px;
+}
+
+#footer {
+    height: 50px;
+}
+
+#content {
+    display: flex;
+    flex-grow: 1;
+    background-color: red;
+}
+
+#waldo-img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(30px, 4vw, 80px);
+    width: clamp(30px, 4vw, 80px);
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+#dot {
+    height: 0.4vw;
+    width: 0.4vw;
+    border-radius: 8px;
+    background-color: red;
+}
+
+#dropdown {
+    position: relative;
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 190px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#option {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    border: solid 1px #dcdcdc;
+}
+
+#option:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+#option-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 40px;
+}
+
+#marker-wrapper {
+    position: absolute;
+    display: none;
+}
