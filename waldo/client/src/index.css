@@ -71,14 +71,16 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 190px;
+    width: clamp(100px, 10vw, 190px);
     padding: 10px;
     border-radius: 8px;
 }
 
-#option {
+#option,
+#header-option {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: black;
     padding: 10px;
     background-color: #dcdcdc;
@@ -94,10 +96,36 @@ body {
 #option-img {
     height: 30px;
     width: 30px;
-    margin-right: 40px;
 }
 
 #marker-wrapper {
     position: absolute;
     display: none;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-option-wrapper {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#header-option {
+    width: max(100px, 7vw);
+}
+
+.close-btn {
+    color: white;
+    order: 2;
+    position: relative;
+    left: -8px;
+}
+
+#dropdown-container {
+    display: flex;
 }
